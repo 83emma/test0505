@@ -1,0 +1,380 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+	/*   border: solid 2px black; */
+	  vertical-align: top;
+	  font-family: 微軟正黑體;
+	  font-family: roboto;
+	  letter-spacing: 1px;
+	  box-sizing: border-box;
+	  position: relative;
+	}
+	html,body{
+		width: 100%; height: 100%;
+		padding: 0px; margin: 0px;
+		background-color: #e5e5e5;
+	  }
+	
+	/* 履歷表總表 */
+	.resume{
+	  width: 965px; height:1000px;
+	  margin-top: 30px;
+	  margin-left: 200px;
+	  background-color: #fffffc;
+	}
+	
+	/* 聯絡方式及社群 */
+	.top{
+		display: flex;
+	  	height: 250px;
+	  	margin-bottom: 20px;
+	  	border-top: solid 30px #fcd5ce;
+	  	border-right: solid 30px #fcd5ce;
+	  	border-left: solid 30px #fcd5ce;
+	  }
+	
+	/* 大頭貼 */
+	.pic{
+	  height: 220px;
+	  width: 220px;
+	}
+	
+	/* 大頭貼照片 */
+	.pic img{
+		height: 200px;
+		margin-left: 40px;
+		margin-top: 10px;
+
+	}
+	
+	/* 聯絡方式及社群 */
+	.about{
+	  height: 240px;
+	  width: 640px;
+	  margin-left: 10px;
+	  margin-right: 10px;
+	}
+	.left{
+	  margin-left: 50px;
+	}
+	
+	/* 聯絡方式 */
+	.about h1{
+		margin: 10px;
+		font-size: 28px;
+		font-weight: 600px;
+	    text-align: center;
+	}
+	.title1{
+		display: flex;
+	}
+	.about1{
+		margin-left: 10px;
+	 	padding-left: 10px;
+	    line-height: 45px;
+	    border-left: solid 5px #03045e;
+	}
+	.about2{
+		  width: 300px;
+	}
+	
+	/* 社群 */
+	.contact{
+	  width: 200px;
+	  display: inline-block; 
+	  padding-left: 10px;
+	  margin-top: 0px;
+	  margin-left: 10px;
+	  line-height: 45px;
+	  border-left: solid 5px #03045e;
+	}
+	.contact p{
+	  display: inline;
+	  left: 5px;
+	}
+	.contact1{
+	  display: block;
+	}
+	.contact1 img{
+	  border: 0px;
+	  height: 30px;
+	  border-radius: 20%;
+	  vertical-align: middle;
+	}
+	.menu{
+		display: flex;
+	}
+	.left{
+  		display: flex;
+  		flex-direction:column;
+	}
+	/* 自我介紹 */
+	.profile{
+	  height: 240px;
+	  width: 420px;
+	  border: solid 2px #fcd5ce;
+	}
+	.profile p{
+	  margin-bottom: 10px;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	  line-height: 2
+	}
+	
+	/* 學歷 */
+	.education{
+	  height: 200px;
+	  width: 420px;
+	  margin-top: 20px;
+	  border: solid 2px #fcd5ce;
+	}
+	.school{
+	  width: 300px;
+	  margin-left: 50px;
+	  margin-top: 30px;
+	  line-height: 4;
+	}
+	
+	/* 學歷時間線 */
+	.line{
+	  height: 150px;
+	  margin-left: 20px;
+	  margin-top: 10px;
+	  border-right: solid 3px #03045e;
+	  border-radius: 20px 20px;
+	  position: absolute;  
+	}
+	.circle1{
+	  top: 80px;
+	}
+	.circle2{
+	  bottom: 40px;
+	}
+	
+	/* 工作經歷 */
+	.exp{
+	  height: 460px;
+	  width: 420px;
+	  margin-left: 20px;
+	  border: solid 2px #fcd5ce;
+	}
+	.left,.exp{
+	  display: inline-block;
+	}
+	.work{
+	  width: 370px;
+	  margin-left: 50px;
+	  margin-top: 10px;
+	  line-height: 4;
+	}
+	.work h3 {
+		font-weight: bolder;
+	}
+	/* 工作經歷時間表 */
+	.line1{
+	  height: 380px;
+	  margin-left: 20px;
+	  margin-top: 0px;
+	  border-right: solid 3px #03045e;
+	  border-radius: 20px 20px;
+	  
+	  position: absolute;  
+	}
+	.circle3{
+	  top: 60px;
+	}
+	.circle4{
+	  top: 190px;
+	}
+	.circle5{
+	  bottom: 120px;
+	}
+	.circle6{
+	  bottom: 70px;
+	}
+	
+	/* 最下層 */
+	.bottom{
+		display: flex;
+	  	height: 250px;
+	 	margin-top: 20px;
+	   	border-bottom: solid 30px #03045e;
+	  	border-left: solid 30px #03045e;
+	  	border-right: solid 30px #03045e;
+	}
+	
+	/* 相關技能 */
+	.skills{
+	  height: 200px;
+	  width: 420px;
+	  margin-left: 20px;
+	  border: solid 2px #fcd5ce;
+	}
+	.skills1{
+	  display: inline-block;
+	  line-height: 1.5;
+	  margin: auto;
+	  top: 10px;
+	  margin-left: 10px;
+	}
+	/* 技能小圈圈 */
+	.c1,.c2,.c3,.c4,.c5,.i6,.i7,.i8,.i9,.i10,.r11,.r12,.r13,.r14,.r15,.l16,.l17,.l18,.l19,.l20{
+	  display: inline-block;
+	  height: 20px;
+	  width: 20px;
+	  border: solid 3px #03045e;
+	  border-radius: 100%;
+	  padding: auto;
+	}
+	.c1,.c2,.c3,.c4,.c5{
+	  bottom: 93px;
+	  left: 150px;
+	}
+	.i6,.i7,.i8,.i9,.i10{
+	  bottom: 69px;
+	  left: 25px;
+	}
+	.r11,.r12,.r13,.r14,.r15{
+	  bottom: 44px;
+	  left: -100px;
+	}
+	.l16{
+	  bottom: 18px;
+	  left: -125px;
+	}
+	.l17,.l18,.l19,.l20{
+	  bottom: 44px;
+	  left: 150px;
+	}
+	.c1,.c2,.c3,.c4,.i6,.i7,.i8,.r11,.r12,.l17,.l18{
+	  background-color: #03045e
+	}
+	
+	/* 語言 */
+	.language{
+	  height: 200px;
+	  width: 420px;
+	  margin-left: 20px;
+	  margin-right: 0px;
+	  border: solid 2px #fcd5ce;
+	}
+	.language p{
+	  width: 100px;
+	  margin-left: 10px;
+	  padding-top: 10px;
+	}
+	.ma{
+	  margin-top: 40px; 
+	}
+	
+	/* 語言長條圖 */
+	.square{
+	  height: 20px;
+	  width: 300px;
+	  border: solid 2px;
+	  top: 65px;
+	  left: 10px;
+	  position: absolute;
+	}
+	.square1{
+	  height: 20px;
+	  width: 300px;
+	  border: solid 2px #03045e;
+	  bottom: 50px;
+	  left: 10px;
+	  position: absolute;
+	}
+	.square-s{
+	  height: 14px;
+	  width: 40%;
+	  border: solid 2px #03045e;
+	  background-color: #03045e;
+	  margin : 1px;
+	  position: absolute;
+	}
+	.square-s1{
+	  height: 14px;
+	  width: 99%;
+	  border: solid 2px #03045e;
+	  background-color: #03045e;
+	  margin : 1px;
+	  position: absolute;
+	}
+	.number{
+	  font-weight: 500;
+	  font-size: 15px;
+	  top: -3px;
+	  right: -70px;
+	  position: absolute;
+	}
+	
+	/* 各項小標題 */
+	h2{
+	  width: 230px;
+	  border: 0px;
+	  border-bottom: solid 2px #fcd5ce;
+	  margin-top: 10px;
+	  margin-left: 0px;
+	  padding-left: 10px;
+	  color: #03045e
+	}
+	
+	/* 時間條小圈圈 */
+	.circle1,.circle2,.circle3,.circle4,.circle5,.circle6{
+	  height: 15px;
+	  width: 15px;
+	  left: 14px;
+	  border: solid 1px #03045e;
+	  border-radius: 100%;
+	  background-color: #03045e;
+	  
+	  position: absolute;
+	}
+	
